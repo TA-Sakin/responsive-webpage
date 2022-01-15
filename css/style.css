@@ -119,13 +119,17 @@ body {
   padding: 25px 0;
 }
 .brand img {
-  margin: 0 30px;
+  margin-left: 70px;
 }
 
 /* -----------------------
      Popular Collection
 -------------------------- */
-
+.products-collection {
+  margin-left: 190px;
+  margin-right: 170px;
+  margin-bottom: 80px;
+}
 .popular-collection {
   display: flex;
   justify-content: center;
@@ -144,10 +148,10 @@ body {
 .product {
   width: 329px;
   height: 476px;
-  /* box-shadow: 10px 10px 30px grey;
-  border: 1px solid black; */
   box-shadow: 0 0 15px #c7c7c7;
   margin-bottom: 23px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .product-banner {
   display: flex;
@@ -194,4 +198,95 @@ body {
   font-size: 14px;
   line-height: 20.02px;
   padding-left: 15px;
+}
+.see-more {
+  color: #e02c6d;
+  margin-left: 960px;
+  margin-top: 40px;
+}
+.see-more p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.see-arrow {
+  margin-left: 8px;
+}
+
+/* -----------------------
+     Influecer
+-------------------------- */
+.influencers {
+  display: flex;
+  margin-bottom: 90px;
+}
+.influencer-details {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.influencer-title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+.social-color {
+  color: #e02c6d;
+}
+.influencer-info {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #3a3a3a;
+  margin-bottom: 25px;
+}
+.influencer-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.influencer-img img {
+  height: 500px;
+  width: 500px;
+}
+.influencer-btn {
+  width: 196px;
+  height: 44px;
+  background-color: #e02c6d;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid #e02c6d;
+  cursor: pointer;
+}
+footer {
+  background-color: rgb(14, 2, 31);
+}
+.footer-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0;
+}
+.footer-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.footer-copyright {
+  color: #d9dbe1;
+  font-size: 14px;
+  line-height: 24px;
+}
+.icon {
+  padding-top: 10px;
+}
+.social-icon {
+  color: #ffffff;
+  padding: 0 8px;
 }
