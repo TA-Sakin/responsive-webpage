@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@600;700&family=Raleway:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@600;700&family=Raleway:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +7,16 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --inter-font: "Inter", sans-serif;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* -----------------------
+     Navigation
+-------------------------- */
 .heading {
   display: flex;
   justify-content: space-between;
@@ -36,9 +43,13 @@ body {
   text-decoration: none;
   color: #3a3a3a;
 }
-.card-icon {
-  font-size: 20px;
+.nav-icon {
+  font-size: 25px;
 }
+
+/* -----------------------
+     Section Prebook
+-------------------------- */
 .section-prebook {
   display: flex;
   margin-top: 90px;
@@ -92,4 +103,95 @@ body {
   width: 440px;
   height: 414px;
   padding-top: 20px;
+}
+/* -----------------------
+     Brands
+-------------------------- */
+.brand-border {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, #edf0f3, #cbd7e0, #edf0f3);
+  border-image-slice: 1;
+  margin-bottom: 100px;
+  margin-top: 70px;
+}
+.brand {
+  padding: 25px 0;
+}
+.brand img {
+  margin: 0 30px;
+}
+
+/* -----------------------
+     Popular Collection
+-------------------------- */
+
+.popular-collection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.popular-collection h2 {
+  font-size: 28px;
+  line-height: 70px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.product {
+  width: 329px;
+  height: 476px;
+  /* box-shadow: 10px 10px 30px grey;
+  border: 1px solid black; */
+  box-shadow: 0 0 15px #c7c7c7;
+  margin-bottom: 23px;
+}
+.product-banner {
+  display: flex;
+  justify-content: center;
+}
+.product-banner img {
+  padding: 17px 0;
+  width: 300px;
+  height: 256px;
+}
+.product-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.product-price {
+  font-family: var(--inter-font);
+  padding-left: 15px;
+
+  font-weight: 400;
+  font-size: 24px;
+  columns: #000000;
+  list-style: 36px;
+}
+.product-rating {
+  padding-left: 15px;
+  color: #fb8200;
+  font-size: 12px;
+}
+.rating-point {
+  color: #5e6366;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+.product-info {
+  font-family: var(--inter-font);
+  font-weight: 700;
+  color: #787885;
+  font-size: 14px;
+  line-height: 20.02px;
+  padding-left: 15px;
 }
