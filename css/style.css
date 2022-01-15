@@ -154,6 +154,10 @@ body {
   margin-left: 15px;
   border-radius: 5px;
 }
+.product:hover .product-banner{
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
+}
 .product-banner {
   display: flex;
   justify-content: center;
@@ -301,20 +305,97 @@ footer {
   .container {
     margin: 0 50px;
   }
-  /* .section-prebook {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: 300px;
-    margin-right: 300px;
-  } */
-
-  /* .section-left {
+  .section-right {
     width: 500px;
-    height: 300px;
+    padding-right: 50px;
+  }
+  .see-more {
+    margin-left: 400px;
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    margin: 0 40px;
+  }
+  .navigation li {
+    margin-left: 20px;
+  }
+  .section-left {
+    width: 500px;
+    margin-bottom: 100px;
+    order: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
-  } */
+    /* text-align: center; */
+  }
+  .section-right {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    /* padding-right: 150px; */
+  }
+  .section-prebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-column-gap: 20px;
+  }
+  .influencers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .influencer-details {
+    width: 500px;
+    margin-bottom: 80px;
+  }
+  footer {
+    background-color: rgb(14, 2, 31);
+    width: 100vw;
+  }
+}
+@media (max-width: 749px) {
+  .container {
+    margin: 0;auto;
+  }
+  .navigation {
+    display: none;
+  }
+  .heading {
+    justify-content: center;
+    text-align: center;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .section-prebook {
+    text-align: center;
+  }
+  .section-left {
+    max-width: 350px;
+  }
+  .section-right {
+    width: 350px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .influencer-title {
+    font-size: 20px;
+  }
 }
