@@ -154,7 +154,7 @@ body {
   margin-left: 15px;
   border-radius: 5px;
 }
-.product:hover .product-banner{
+.product:hover .product-banner {
   transform: scale(1.1);
   transition: transform 1s ease-in-out;
 }
@@ -369,7 +369,7 @@ footer {
 }
 @media (max-width: 749px) {
   .container {
-    margin: 0;auto;
+    margin: 0 auto;
   }
   .navigation {
     display: none;
@@ -387,7 +387,7 @@ footer {
     text-align: center;
   }
   .section-left {
-    max-width: 350px;
+    width: 350px;
   }
   .section-right {
     width: 350px;
